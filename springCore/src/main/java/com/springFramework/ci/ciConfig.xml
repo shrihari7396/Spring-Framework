@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="https://www.springframework.org/schema/context"
+  xmlns:p="https://www.springframework.org/schema/p"
+  xmlns:c="https://www.springframework.org/schema/c"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd
+  https://www.springframework.org/schema/context
+  https://www.springframework.org/schema/context/spring-context.xsd">
+  
+  	
+  
+  	<bean class="com.springFramework.ci.Person" name="person1">
+  		<constructor-arg value="ShriRam" type="String"/>
+  		<constructor-arg value="1234" type="int"/>
+  		<constructor-arg ref="certificate"/>
+  		<constructor-arg type="List">
+  			<list>
+  				<value>234</value>
+  				<value>23</value>
+  				<value>34</value>
+  				<value>4</value>
+  				<value>235</value>
+  			</list>
+  		</constructor-arg>
+  	</bean>
+  	
+	<bean class="com.springFramework.ci.Addtion" name="addition1">
+  		<constructor-arg value="34234" type="int" index="1"/>
+  		<constructor-arg value="3434" type="int" index="0"/>
+  	</bean>
+  	
+  	<bean class="com.springFramework.ci.Certificate" name="certificate">
+  		<constructor-arg value="Shrihari Kulkarni" />
+  	</bean>
+</beans> 

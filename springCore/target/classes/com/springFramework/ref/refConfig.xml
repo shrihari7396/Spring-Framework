@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="https://www.springframework.org/schema/context"
+  xmlns:p="https://www.springframework.org/schema/p"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd
+  https://www.springframework.org/schema/context
+  https://www.springframework.org/schema/context/spring-context.xsd">
+  
+  <bean class="com.springFramework.ref.B" name="bref">
+  	<property name="y" value="234"/>
+  </bean>
+  
+  <bean class="com.springFramework.ref.A" name="aref">
+  		<property name="n" value="2342"/>
+  		<property name="b" ref="bref"/>
+  </bean>
+  
+</beans> 
